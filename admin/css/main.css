@@ -149,7 +149,7 @@ cursor:pointer;
 opacity: 1;
 }
 
-.btnTwo a:hover{
+.btn3 a:hover{
   background-color: white;
   font-size: 14px;
   font-weight: bold;
@@ -157,6 +157,33 @@ opacity: 1;
   cursor:pointer;
 }
 
+
+.btn3{
+  margin-top: 5px;
+line-height: 35px;
+text-align: center;
+text-decoration: none;
+float: right;
+/* display: block; */
+height: 35px;
+width: 100px;
+font-size: 14px;
+font-weight: bold;
+background-color: #2d2d2d;
+color: white;
+transition: 0.2s;
+border: solid 0.5px white;
+cursor:pointer;
+opacity: 1;
+}
+
+.btn3 a:hover{
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d2d2d;
+  cursor:pointer;
+}
 
 
 
@@ -190,6 +217,14 @@ opacity: 1;
   margin-right: 25px;
   border-radius: 5px;
   margin-top: 20px;
+  opacity: 1;
+}
+
+.editText{
+  float: right;
+  margin-right: 25px;
+  border-radius: 5px;
+  margin-top: 15px;
   opacity: 1;
 }
 
@@ -364,6 +399,19 @@ background-color: #2d2d2d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
+.panel4{
+  /* padding-top: 40px; */
+  width: 600px;
+  height: 450px;
+  margin: 0 auto;
+  margin-top: 10%;
+  /* border-radius: 10px; */
+  background-color: #3d3d3d;
+  opacity: 0.8;
+  border: solid white 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
 .editLabels{
   color: white;
   font:Helvetica, Arial;
@@ -416,11 +464,35 @@ opacity: 1;
   cursor:pointer;
 }
 
+.btn4{
+margin: 0 auto;
+display: block;
+height: 65px;
+width: 100px;
+font-size: 14px;
+font-weight: bold;
+margin-top: 30px;
+background-color: #2d2d2d;
+color: white;
+padding: 7px;
+transition: 0.2s;
+cursor:pointer;
+opacity: 1;
+}
+
+.btn4:hover{
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2d2d2d;
+  cursor:pointer;
+}
+
 .lastLogin{
   margin: 0;
   margin-left: 15px;
   padding-top: 30px;
-  color: black;
+  color: White;
   opacity: 1;
 }
 
@@ -540,3 +612,28 @@ opacity: 1;
     font-weight:bold;
     margin-top: 30px;
   }
+
+.Editmov{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Helvetica;
+  margin-top: 20px;
+}
+
+
+.posterVid2 video{
+   float: right;
+   width: 600px;
+   border: solid white 0.5px;
+   margin-right: 30px;
+   padding: 2px;
+   margin-bottom: 20px;
+ }
+.posterVid2 img{
+   float: left;
+   width: 200px;
+   padding:2px;
+   border: solid white 0.5px;
+   margin-left: 30px;
+ }
