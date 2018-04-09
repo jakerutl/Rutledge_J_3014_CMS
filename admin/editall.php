@@ -20,11 +20,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Details</title>
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/reset.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<div class="adminBody">
+
 	<?php
 		$tbl = "tbl_movies";
 		$col = "movies_id";
@@ -45,5 +47,6 @@
 			echo "<p>{$getMovie}</p>";
 		}
 	?>
+</div>
 </body>
 </html>
