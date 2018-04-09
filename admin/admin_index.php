@@ -28,7 +28,7 @@
 	</div>
 </header>
 
-<div class="mainBody">
+<div class="adminBody">
 	<div class="middle">
 
 	<h2 class="timeMsg">
@@ -37,11 +37,11 @@
 			$Hour = date('G');
 
 			if ( $Hour >= 5 && $Hour <= 11 ) {
-	    echo "Good morning sunshine. Just a reminder to go to the gym tonight!";
+	    echo "Good Morning";
 		} else if ( $Hour >= 12 && $Hour <= 18 ) {
-	    echo "Good Afternoon, I hope you have gone to the gym already";
+	    echo "Good Afternoon";
 		} else if ( $Hour >= 19 || $Hour <= 4 ) {
-	    echo "Good Night(even though you'll be staying up all night trying to do homework)";
+	    echo "Good Night";
 	}
 	?>
 

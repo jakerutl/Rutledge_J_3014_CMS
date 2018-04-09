@@ -302,3 +302,19 @@ color: white;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 4px 8px 0 rgba(225, 225, 225, 0.1), 0 6px 20px 0 rgba(225, 225, 225, 0.5);
 }
+
+.adminBody{
+  width: 960px;
+  min-height: 960px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: rgba(225, 225, 225, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(225, 225, 225, 0.1), 0 6px 20px 0 rgba(225, 225, 225, 0.5);
+}
+
+.timeMsg{
+  font-size: 24px;
+  color: white;
+}

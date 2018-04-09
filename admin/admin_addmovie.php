@@ -53,30 +53,35 @@ if(isset($_GET['filter'])){
       <a href="admin_index.php" class="logout-link">Home</a>
   	</div>
   </header>
+
+	<div class="adminBody">
+		<h1 class="mov">Add a Movie!</h1>
+<div class="panelTwo">
+
 	<?php if(!empty($message)){ echo $message;} ?>
 	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
-		<label>Cover Image:</label>
-		<input type="file" name="cover" value="">
+		<label class="addLabels">Cover Image:</label>
+		<input class="addCover" type="file" name="cover" value="">
 		<br><br>
-		<label>Movie Title:</label>
-		<input type="text" name="title" value="">
+		<label class="addLabels">Movie Title:</label>
+		<input class="addInput" type="text" name="title" value="">
 		<br><br>
-		<label>Movie Year:</label>
-		<input type="text" name="year" value="">
+		<label class="addLabels">Movie Year:</label>
+		<input class="addInput" type="text" name="year" value="">
 		<br><br>
-		<label>Movie Runtime:</label>
-		<input type="text" name="run" value="">
+		<label class="addLabels">Movie Runtime:</label>
+		<input class="addInput" type="text" name="run" value="">
 		<br><br>
-		<label>Movie Storyline:</label>
-		<input type="text" name="story" value="">
+		<label class="addLabels">Movie Storyline:</label>
+		<input class="addInput" type="text" name="story" value="">
 		<br><br>
-		<label>Movie Trailer:</label>
-		<input type="text" name="trailer" value="">
+		<label class="addLabels">Movie Trailer:</label>
+		<input class="addInput" type="text" name="trailer" value="">
 		<br><br>
-		<label>Movie Release:</label>
-		<input type="text" name="release" value="">
+		<label class="addLabels">Movie Release:</label>
+		<input class="addInput" type="text" name="release" value="">
 		<br><br>
-		<select name="genList">
+		<select class="genList" name="genList">
 			<option>Please select a movie genre...</option>
 			<?php
 			while($row = mysqli_fetch_array($genQuery)){
@@ -84,12 +89,15 @@ if(isset($_GET['filter'])){
 			}
 			?>
 		</select><br><br>
-		<input type="submit" name="submit" value="Add Movie">
+		<button id="addInput" class="btnTwo" type="submit" name="submit" value="Add Movie">Add Movie</button>
 	</form>
 
+</div>
 
+<h1 class="edit">Edit Movies!</h1>
+<p class="editInfo">Simply click on a movie to edit it...</p>
 
-	<div class="posters">
+	<div class="adminposters">
 
 
 
@@ -102,7 +110,7 @@ if(isset($_GET['filter'])){
 				<a href=\"editall.php?id={$row['movies_id']}\"><img src=\"../images/{$row['movies_cover']}\" alt=\"{$row['movies_title']}\"></a><br><br>
 				<div>
 				<h2>{$row['movies_title']}</h2>
-				<h3>{$row['movies_name']} </h3> <a href=\"phpscripts/caller.php?caller_id=deleteMovie&id={$row['movies_id']}\">Delete</a><br><br><br>
+				<h3>{$row['movies_name']} </h3> <a class=\"delete\"href=\"phpscripts/caller.php?caller_id=deleteMovie&id={$row['movies_id']}\">Delete</a><br><br><br>
 				</div>
 				</li>
 				";
@@ -115,6 +123,7 @@ if(isset($_GET['filter'])){
 
 	</ul>
 	</div>
+</div>
 
 </body>
 </html>

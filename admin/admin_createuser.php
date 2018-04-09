@@ -52,19 +52,19 @@ confirm_logged_in();
   	</div>
   </header>
 
-  <div class="mainBody">
+  <div class="adminBody">
   	<div class="middle">
 <h2 class="createUser">Create User</h2>
 
-<div class="editDiv" >
+<div class="panel" >
 <?php  if(!empty($message)){echo $message;} ?>
 <form class="editForm" action="admin_createuser.php" method="post">
   <label class="editLabels">First Name:</label>
   <input class="editInput" type="text" name="fname" value=""><br><br>
   <label class="editLabels">Username:</label>
   <input class="editInput" type="text" name="username" value=""><br><br>
-  <!-- <label class="userLabels">Password:</label>
-  <input type="text" name="password" value=""><br><br> -->
+  <label class="editLabels">Password:</label>
+  <input class="editInput"type="text" name="password" value=""><br><br>
   <label class="editLabels">Email:</label>
   <input class="editInput" type="text" name="email" value=""><br><br>
   <select class="lvl" name="lvllist">
@@ -72,8 +72,8 @@ confirm_logged_in();
       <option value="2">Web Admin</option>
       <option value="1">Web Master</option>
   </select><br><br>
-  <input id="createUser" type="submit" name="submit" value="Create User">
-  <h4>Random password will be <br>sent to you via email</h4>
+  <button class="btn" type="submit" name="submit" value="Create User">Create User</button>
+  <h4 class="random">Random password will be <br>sent to you via email</h4>
 </form>
 </div>
 </div>

@@ -27,9 +27,9 @@ $users = getAll($tbl);
  	</div>
  </header>
 
- <div class="mainBody">
+ <div class="adminBody">
  	<div class="middle">
-  <h2 class="delPage">Ready to fire some employees?</h2>
+  <h2 class="delPage">Remove Users</h2>
   <div class="list">
   <?php
   while($row = mysqli_fetch_array($users)){
