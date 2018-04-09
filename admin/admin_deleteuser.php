@@ -30,10 +30,10 @@ $users = getAll($tbl);
  <div class="adminBody">
  	<div class="middle">
   <h2 class="delPage">Remove Users</h2>
-  <div class="list">
+  <div class="panelThree">
   <?php
   while($row = mysqli_fetch_array($users)){
-    echo "<h3>{$row['user_fname']} </h3> <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Remove</a><br><br><br>";
+    echo "<h3 class=\"userName\">{$row['user_fname']} </h3> <a class=\"btn3\"href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Remove</a><br><br><br>";
   }
 
    ?>
